@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connecting QuickBooks — Just Doors Dashboard</title>
+<style>
+  :root {
+    --paper: #FAFAF8; --ink: #24313B; --muted: #5C7182; --brand: #1F4C66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #1a1e21; --ink: #D5D5D7; --muted: #8fb3c9; --brand: #8fb3c9; }
+  }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    margin: 0; padding: 64px 24px; line-height: 1.6; text-align: center;
+  }
+  main { max-width: 520px; margin: 0 auto; }
+  h1 { font-size: 22px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="msg">Finishing the QuickBooks connection…</h1>
+  <p class="muted" id="sub">Handing off to the Just Doors Dashboard on this computer.</p>
+  <script>
+    // OAuth callback relay for the Just Doors Dashboard (a private, single-
+    // company app that runs on company hardware). Intuit requires a public
+    // HTTPS redirect URI; the dashboard server runs on the machine the
+    // connection is started from, so this page forwards Intuit's callback
+    // parameters straight to it. The authorization code is single-use,
+    // short-lived, and useless without the app's server-held client secret.
+    (function () {
+      var q = window.location.search;
+      if (q && q.indexOf("code=") !== -1) {
+        window.location.replace("http://localhost:3001/api/auth/qbo/callback" + q);
+      } else {
+        document.getElementById("msg").textContent = "Nothing to connect";
+        document.getElementById("sub").innerHTML =
+          'This page only completes a QuickBooks connection started from the dashboard. <a href="index.html">About the Just Doors Dashboard</a>';
+      }
+    })();
+  </script>
+  <noscript><p>JavaScript is required to complete the connection. Enable it and retry from the dashboard.</p></noscript>
+</main>
+</body>
+</html>
