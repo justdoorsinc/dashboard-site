@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Just Doors Dashboard</title>
+<style>
+  :root {
+    --paper: #FAFAF8;
+    --ink: #24313B;
+    --muted: #5C7182;
+    --brand: #1F4C66;
+    --link: #1F4C66;
+    --rule: #DEE5E8;
+    --box: #F1F4F5;
+    --box-border: #D8E0E4;
+    --mark: #1F4C66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1A1E21;
+      --ink: #D5D5D7;
+      --muted: #8FB3C9;
+      --brand: #9CC3DC;
+      --link: #9CC3DC;
+      --rule: #2C363D;
+      --box: #20262B;
+      --box-border: #2C363D;
+      --mark: #8FB3C9;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1A1E21;
+    --ink: #D5D5D7;
+    --muted: #8FB3C9;
+    --brand: #9CC3DC;
+    --link: #9CC3DC;
+    --rule: #2C363D;
+    --box: #20262B;
+    --box-border: #2C363D;
+    --mark: #8FB3C9;
+  }
+  :root[data-theme="light"] {
+    --paper: #FAFAF8;
+    --ink: #24313B;
+    --muted: #5C7182;
+    --brand: #1F4C66;
+    --link: #1F4C66;
+    --rule: #DEE5E8;
+    --box: #F1F4F5;
+    --box-border: #D8E0E4;
+    --mark: #1F4C66;
+  }
+
+  html { background: var(--paper); }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 42.5rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  .eyebrow {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--brand);
+    margin: 0 0 1rem;
+  }
+  h1 {
+    font-size: 2.375rem;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+  .meta {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    margin: 0 0 2.25rem;
+  }
+  .meta span { white-space: nowrap; }
+  hr.brand {
+    border: 0;
+    border-top: 3px solid var(--brand);
+    width: 3.5rem;
+    margin: 0 0 2.5rem;
+  }
+
+  .glance {
+    background: var(--box);
+    border: 1px solid var(--box-border);
+    border-radius: 4px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 3rem;
+  }
+  .glance h2 {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 1rem;
+  }
+  .glance dl { margin: 0; display: grid; grid-template-columns: 11rem 1fr; gap: 0.65rem 1.25rem; }
+  .glance dt {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--brand);
+  }
+  .glance dd { margin: 0; font-size: 0.9375rem; line-height: 1.55; }
+  @media (max-width: 34rem) {
+    .glance dl { grid-template-columns: 1fr; gap: 0.15rem; }
+    .glance dd { margin-bottom: 0.75rem; }
+  }
+
+  nav.toc {
+    margin: 0 0 3rem;
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9375rem;
+  }
+  nav.toc h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0 0 0 1.4rem;
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+  nav.toc li { margin: 0 0 0.35rem; break-inside: avoid; }
+  @media (max-width: 34rem) { nav.toc ol { columns: 1; } }
+
+  section { margin: 0 0 2.75rem; }
+  h2.sec {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+  h2.sec .num {
+    color: var(--mark);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.6rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.4rem; }
+  li { margin-bottom: 0.4rem; }
+  strong { font-weight: 700; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 2px; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="page">
+  <p class="eyebrow">Just Doors · Internal Application</p>
+  <h1>Privacy Policy</h1>
+  <div class="meta">
+    <span>Just Doors Dashboard</span>
+    <span>Effective July 14, 2026</span>
+    <span><a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a></span>
+  </div>
+  <hr class="brand">
+
+  <div class="glance">
+    <h2>At a Glance</h2>
+    <dl>
+      <dt>What we access</dt>
+      <dd>Read-only QuickBooks Online accounting data for one company — invoices, expenses, customers, and similar records. The app never writes, edits, or deletes anything in QuickBooks.</dd>
+      <dt>How it's stored</dt>
+      <dd>In temporary server memory only, refreshed on a rolling basis and erased whenever the server restarts. No database of QuickBooks data is kept.</dd>
+      <dt>Who can see it</dt>
+      <dd>Two authorized Just Doors users: Justin Maxim and Quan. No one else.</dd>
+      <dt>Sold or shared?</dt>
+      <dd>Never. Data is not sold, shared with third parties, or used for advertising or model training.</dd>
+      <dt>Disconnecting</dt>
+      <dd>Email <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a> or revoke access in your Intuit account. Stored credentials are deleted and cached data is cleared.</dd>
+    </dl>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#who-we-are">Who We Are</a></li>
+      <li><a href="#what-the-app-does">What the App Does</a></li>
+      <li><a href="#data-we-access">QuickBooks Data We Access</a></li>
+      <li><a href="#storage">How Data Is Stored and Cached</a></li>
+      <li><a href="#sharing">Sharing and Selling of Data</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#disconnection">Disconnection and Data Deletion</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="who-we-are">
+    <h2 class="sec"><span class="num">1.</span>Who We Are</h2>
+    <p>The Just Doors Dashboard (the "App") is an internal business-reporting tool built and operated by Just Doors ("we," "us," "our"), a residential door replacement company. The App exists for one purpose: to give our own team a live financial and operational dashboard for our own business. It is not offered to the public, has no customer-facing features, and is used by exactly two authorized people — Justin Maxim and Quan.</p>
+    <p>Questions about this policy can be sent to <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a>.</p>
+  </section>
+
+  <section id="what-the-app-does">
+    <h2 class="sec"><span class="num">2.</span>What the App Does</h2>
+    <p>The App connects to a single QuickBooks Online company file — our own — through Intuit's OAuth 2.0 authorization flow, using the <strong>com.intuit.quickbooks.accounting</strong> scope. The connection is authorized by an administrator of that QuickBooks company.</p>
+    <p>The App performs <strong>read-only</strong> operations. It queries accounting data through the QuickBooks Online API and displays it in dashboard views. It does not create, modify, or delete any records in QuickBooks Online, and it does not initiate payments or transactions of any kind.</p>
+  </section>
+
+  <section id="data-we-access">
+    <h2 class="sec"><span class="num">3.</span>QuickBooks Data We Access</h2>
+    <p>Under the accounting scope, the App reads the following categories of data from the connected QuickBooks Online company:</p>
+    <ul>
+      <li><strong>Sales records</strong> — invoices, estimates, and payments received</li>
+      <li><strong>Expense records</strong> — expenses, purchases, and bills</li>
+      <li><strong>Contacts</strong> — customer and vendor records associated with those transactions</li>
+      <li><strong>Accounting structure</strong> — the chart of accounts and report data used to summarize financial performance</li>
+    </ul>
+    <p>The App accesses only the data needed to render its dashboards. It does not access payroll records, banking credentials, or payment-card data, and it does not request any Intuit scope beyond <strong>com.intuit.quickbooks.accounting</strong>.</p>
+  </section>
+
+  <section id="storage">
+    <h2 class="sec"><span class="num">4.</span>How Data Is Stored and Cached</h2>
+    <p>The App is deliberately designed to hold as little data as possible:</p>
+    <ul>
+      <li><strong>QuickBooks data is cached in server memory only.</strong> Responses from the QuickBooks API are held in a short-lived, in-memory cache so dashboards load quickly. The cache is refreshed on a rolling basis (approximately hourly) and is erased entirely whenever the server restarts. QuickBooks data is never written to a database or long-term storage.</li>
+      <li><strong>OAuth credentials are stored on company-controlled infrastructure.</strong> The access and refresh tokens issued by Intuit are stored in an access-restricted file on a server controlled by Just Doors, and are used solely to authenticate API requests to Intuit. They are deleted when the connection is terminated (see Section 7).</li>
+      <li><strong>No copies leave our control.</strong> QuickBooks data displayed in the App is not exported to, synced with, or stored on any third-party service.</li>
+    </ul>
+  </section>
+
+  <section id="sharing">
+    <h2 class="sec"><span class="num">5.</span>Sharing and Selling of Data</h2>
+    <p>We do not sell QuickBooks data. We do not share it with third parties. We do not use it for advertising, profiling, or training machine-learning models. The only external service the App communicates with regarding QuickBooks data is Intuit itself, over the official QuickBooks Online API, as the source of that data.</p>
+    <p>Data displayed in the App is visible only to the two authorized users named in Section 1, for internal business-management purposes.</p>
+  </section>
+
+  <section id="retention">
+    <h2 class="sec"><span class="num">6.</span>Data Retention</h2>
+    <ul>
+      <li><strong>Cached QuickBooks data:</strong> retained in memory for hours at most. It is replaced on each refresh cycle and erased completely on every server restart. There is no archive to retain.</li>
+      <li><strong>OAuth tokens:</strong> retained only while the QuickBooks connection is active. When the connection is disconnected or revoked, the tokens are deleted.</li>
+      <li><strong>Logs:</strong> operational logs record system events (such as sync timing and errors), not the contents of accounting records.</li>
+    </ul>
+  </section>
+
+  <section id="disconnection">
+    <h2 class="sec"><span class="num">7.</span>Disconnection and Data Deletion</h2>
+    <p>You can end the App's access to QuickBooks data at any time, in either of two ways:</p>
+    <ul>
+      <li><strong>Ask us.</strong> Email <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a> requesting disconnection or data deletion. We will revoke the connection, delete the stored OAuth tokens, and clear the in-memory cache within 30 days of the request (and typically the same day).</li>
+      <li><strong>Revoke it yourself.</strong> A QuickBooks administrator can disconnect the App directly from their Intuit account under <em>My Apps</em>, which immediately invalidates the App's access. We then delete the stored tokens on our side.</li>
+    </ul>
+    <p>Because QuickBooks data is never stored beyond the temporary in-memory cache, disconnection plus a routine server restart removes all QuickBooks data from the App.</p>
+  </section>
+
+  <section id="security">
+    <h2 class="sec"><span class="num">8.</span>Security</h2>
+    <p>All communication between the App and Intuit occurs over encrypted HTTPS/TLS connections using Intuit's official API endpoints. Access to the App is limited to the two authorized users, and access to the server that runs the App is restricted to Just Doors. OAuth tokens are never shared, published, or embedded in client-side code.</p>
+  </section>
+
+  <section id="changes">
+    <h2 class="sec"><span class="num">9.</span>Changes to This Policy</h2>
+    <p>If the App's data practices change — for example, if it ever begins storing data persistently or adds users — we will update this policy and revise the effective date at the top of this page before the change takes effect.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="sec"><span class="num">10.</span>Contact</h2>
+    <p>For any question, request, or concern about this policy or the App's handling of QuickBooks data, contact:</p>
+    <p><strong>Justin Maxim</strong> — Just Doors<br>
+    <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a> · <a href="https://justdoors.io">justdoors.io</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Just Doors · justdoors.io</span>
+    <span id="cross-link"><a href="https://claude.ai/code/artifact/d56190ce-add2-4fe0-b13f-dfd3dee0ea81">End-User License Agreement</a></span>
+  </footer>
+</div>
+
+</body>
+</html>

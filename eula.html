@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>End-User License Agreement — Just Doors Dashboard</title>
+<style>
+  :root {
+    --paper: #FAFAF8;
+    --ink: #24313B;
+    --muted: #5C7182;
+    --brand: #1F4C66;
+    --link: #1F4C66;
+    --rule: #DEE5E8;
+    --box: #F1F4F5;
+    --box-border: #D8E0E4;
+    --mark: #1F4C66;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #1A1E21;
+      --ink: #D5D5D7;
+      --muted: #8FB3C9;
+      --brand: #9CC3DC;
+      --link: #9CC3DC;
+      --rule: #2C363D;
+      --box: #20262B;
+      --box-border: #2C363D;
+      --mark: #8FB3C9;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1A1E21;
+    --ink: #D5D5D7;
+    --muted: #8FB3C9;
+    --brand: #9CC3DC;
+    --link: #9CC3DC;
+    --rule: #2C363D;
+    --box: #20262B;
+    --box-border: #2C363D;
+    --mark: #8FB3C9;
+  }
+  :root[data-theme="light"] {
+    --paper: #FAFAF8;
+    --ink: #24313B;
+    --muted: #5C7182;
+    --brand: #1F4C66;
+    --link: #1F4C66;
+    --rule: #DEE5E8;
+    --box: #F1F4F5;
+    --box-border: #D8E0E4;
+    --mark: #1F4C66;
+  }
+
+  html { background: var(--paper); }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 42.5rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 5rem;
+  }
+
+  .eyebrow {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--brand);
+    margin: 0 0 1rem;
+  }
+  h1 {
+    font-size: 2.375rem;
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+  .meta {
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    margin: 0 0 2.25rem;
+  }
+  .meta span { white-space: nowrap; }
+  hr.brand {
+    border: 0;
+    border-top: 3px solid var(--brand);
+    width: 3.5rem;
+    margin: 0 0 2.5rem;
+  }
+
+  .preamble {
+    background: var(--box);
+    border: 1px solid var(--box-border);
+    border-radius: 4px;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 3rem;
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+  .preamble p { margin: 0 0 0.75rem; }
+  .preamble p:last-child { margin: 0; }
+
+  nav.toc {
+    margin: 0 0 3rem;
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.9375rem;
+  }
+  nav.toc h2 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding: 0 0 0 1.4rem;
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+  nav.toc li { margin: 0 0 0.35rem; break-inside: avoid; }
+  @media (max-width: 34rem) { nav.toc ol { columns: 1; } }
+
+  section { margin: 0 0 2.75rem; }
+  h2.sec {
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 0.9rem;
+    text-wrap: balance;
+  }
+  h2.sec .num {
+    color: var(--mark);
+    font-variant-numeric: tabular-nums;
+    margin-right: 0.6rem;
+  }
+  p { margin: 0 0 1rem; }
+  ul { margin: 0 0 1rem; padding-left: 1.4rem; }
+  li { margin-bottom: 0.4rem; }
+  strong { font-weight: 700; }
+  a { color: var(--link); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 2px; }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.875rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 2rem;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="page">
+  <p class="eyebrow">Just Doors · Internal Application</p>
+  <h1>End-User License Agreement</h1>
+  <div class="meta">
+    <span>Just Doors Dashboard</span>
+    <span>Effective July 14, 2026</span>
+    <span><a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a></span>
+  </div>
+  <hr class="brand">
+
+  <div class="preamble">
+    <p>This End-User License Agreement (this "Agreement") governs use of the Just Doors Dashboard (the "App"), an internal business-reporting application owned and operated by Just Doors ("we," "us," "our"). The App connects to our company's QuickBooks Online account on a read-only basis and presents that data in dashboard form.</p>
+    <p>By accessing or using the App, you agree to this Agreement. If you do not agree, do not use the App.</p>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#license">License Grant</a></li>
+      <li><a href="#internal-use">Internal Use Only</a></li>
+      <li><a href="#authorized-users">Authorized Users</a></li>
+      <li><a href="#acceptable-use">Acceptable Use</a></li>
+      <li><a href="#quickbooks">QuickBooks Online Connection</a></li>
+      <li><a href="#ownership">Ownership</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#warranty">Disclaimer of Warranty</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#termination">Termination and Disconnection</a></li>
+      <li><a href="#general">General Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="license">
+    <h2 class="sec"><span class="num">1.</span>License Grant</h2>
+    <p>Subject to this Agreement, Just Doors grants each authorized user a limited, revocable, non-exclusive, non-transferable license to access and use the App solely for Just Doors' internal business purposes. This license conveys no ownership interest in the App and may be revoked at any time as described in Section 10.</p>
+  </section>
+
+  <section id="internal-use">
+    <h2 class="sec"><span class="num">2.</span>Internal Use Only</h2>
+    <p>The App is an internal tool for Just Doors. It is not a commercial product, is not offered for sale or subscription, and is not available to the public. Use of the App is limited to viewing and analyzing Just Doors' own business data for company decision-making. The App may not be used to provide services to any third party.</p>
+  </section>
+
+  <section id="authorized-users">
+    <h2 class="sec"><span class="num">3.</span>Authorized Users</h2>
+    <p>Access to the App is limited to two authorized users: <strong>Justin Maxim</strong> and <strong>Quan</strong>, both accessing the same connected QuickBooks Online company on behalf of Just Doors. No other person may be granted access without Just Doors' prior authorization and a corresponding update to this Agreement and the App's <a id="privacy-inline" href="https://claude.ai/code/artifact/5e67bc92-fcef-4fe6-96b5-4d7cb3da1559">Privacy Policy</a>.</p>
+  </section>
+
+  <section id="acceptable-use">
+    <h2 class="sec"><span class="num">4.</span>Acceptable Use</h2>
+    <p>As a condition of use, each authorized user agrees to:</p>
+    <ul>
+      <li>use the App only for Just Doors' internal business purposes;</li>
+      <li>keep login credentials confidential and never share access with any unauthorized person;</li>
+      <li>treat data displayed in the App as confidential company financial information and not disclose it outside the company except as authorized in the ordinary course of business;</li>
+      <li>not attempt to circumvent the App's read-only design, access controls, or authentication;</li>
+      <li>not copy, resell, sublicense, or redistribute the App or systematically extract its data for use outside Just Doors;</li>
+      <li>not use the App in any way that violates applicable law or Intuit's terms of service.</li>
+    </ul>
+  </section>
+
+  <section id="quickbooks">
+    <h2 class="sec"><span class="num">5.</span>QuickBooks Online Connection</h2>
+    <p>The App connects to a single QuickBooks Online company via Intuit's OAuth 2.0 authorization flow, using the <strong>com.intuit.quickbooks.accounting</strong> scope, and performs <strong>read-only</strong> operations. It does not create, modify, or delete records in QuickBooks Online.</p>
+    <p>QuickBooks and QuickBooks Online are trademarks of Intuit Inc. The App is an independent internal tool built on Intuit's public API; it is not endorsed by, affiliated with, or certified by Intuit. Use of QuickBooks Online itself remains governed by the user's agreements with Intuit, and the App's access to QuickBooks data may be revoked at any time through the connected Intuit account.</p>
+  </section>
+
+  <section id="ownership">
+    <h2 class="sec"><span class="num">6.</span>Ownership</h2>
+    <p>The App — including its software, design, and documentation — is and remains the property of Just Doors. The underlying accounting data belongs to Just Doors as the owner of the connected QuickBooks Online company. Nothing in this Agreement transfers any intellectual-property rights to any user.</p>
+  </section>
+
+  <section id="privacy">
+    <h2 class="sec"><span class="num">7.</span>Privacy</h2>
+    <p>The App's handling of QuickBooks Online data — what is accessed, how it is cached, how long it is retained, and how to request disconnection or deletion — is described in the <a id="privacy-inline-2" href="https://claude.ai/code/artifact/5e67bc92-fcef-4fe6-96b5-4d7cb3da1559">Just Doors Dashboard Privacy Policy</a>, which is incorporated into this Agreement by reference.</p>
+  </section>
+
+  <section id="warranty">
+    <h2 class="sec"><span class="num">8.</span>Disclaimer of Warranty</h2>
+    <p>THE APP IS PROVIDED <strong>"AS IS"</strong> AND <strong>"AS AVAILABLE,"</strong> WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, OR NON-INFRINGEMENT. JUST DOORS DOES NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR THAT DASHBOARD FIGURES WILL MATCH QUICKBOOKS ONLINE AT EVERY MOMENT; CACHED DATA MAY LAG THE SOURCE. THE APP IS A REPORTING CONVENIENCE, NOT A SYSTEM OF RECORD — QUICKBOOKS ONLINE REMAINS THE AUTHORITATIVE SOURCE FOR ALL ACCOUNTING DATA.</p>
+  </section>
+
+  <section id="liability">
+    <h2 class="sec"><span class="num">9.</span>Limitation of Liability</h2>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, JUST DOORS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES — INCLUDING LOST PROFITS, LOST DATA, OR BUSINESS INTERRUPTION — ARISING OUT OF OR RELATED TO USE OF, OR INABILITY TO USE, THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. DECISIONS MADE IN RELIANCE ON DASHBOARD DATA ARE THE RESPONSIBILITY OF THE USER, WHO SHOULD VERIFY MATERIAL FIGURES AGAINST QUICKBOOKS ONLINE DIRECTLY.</p>
+  </section>
+
+  <section id="termination">
+    <h2 class="sec"><span class="num">10.</span>Termination and Disconnection</h2>
+    <p>Just Doors may suspend or terminate any user's access to the App, or discontinue the App entirely, at any time and for any reason. A user's license terminates automatically upon any material breach of this Agreement or upon that user ceasing to be authorized by Just Doors.</p>
+    <p>The App's connection to QuickBooks Online may be ended at any time by either party: Just Doors may disconnect the App on its side, and a QuickBooks administrator may revoke the App's access from their Intuit account under <em>My Apps</em>. Upon disconnection, the App's stored OAuth credentials are deleted and cached QuickBooks data is cleared, as described in the Privacy Policy. Sections 6, 8, 9, and 11 survive any termination.</p>
+  </section>
+
+  <section id="general">
+    <h2 class="sec"><span class="num">11.</span>General Terms</h2>
+    <p>This Agreement is the entire agreement between Just Doors and each authorized user concerning the App, and it supersedes any prior understanding on the subject. If any provision is held unenforceable, the remainder stays in effect. This Agreement is governed by the laws of the U.S. state in which Just Doors maintains its principal place of business, without regard to conflict-of-laws principles. Just Doors may update this Agreement by posting a revised version at this page with an updated effective date; continued use of the App after an update constitutes acceptance.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="sec"><span class="num">12.</span>Contact</h2>
+    <p>Questions about this Agreement can be directed to:</p>
+    <p><strong>Justin Maxim</strong> — Just Doors<br>
+    <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a> · <a href="https://justdoors.io">justdoors.io</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Just Doors · justdoors.io</span>
+    <span><a id="cross-link" href="https://claude.ai/code/artifact/5e67bc92-fcef-4fe6-96b5-4d7cb3da1559">Privacy Policy</a></span>
+  </footer>
+</div>
+
+</body>
+</html>

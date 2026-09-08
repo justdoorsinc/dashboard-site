@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Just Doors Dashboard</title>
+<style>
+  :root {
+    --paper: #FAFAF8; --ink: #24313B; --muted: #5C7182;
+    --brand: #1F4C66; --rule: #DEE5E8; --box: #F1F4F5; --box-border: #D8E0E4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #1a1e21; --ink: #D5D5D7; --muted: #8fb3c9; --brand: #8fb3c9; --rule: #2a3338; --box: #21272b; --box-border: #2e373d; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    margin: 0; padding: 48px 24px; line-height: 1.6;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  .brand { color: var(--brand); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; margin: 0 0 8px; }
+  h1 { font-size: 30px; margin: 0 0 12px; line-height: 1.2; }
+  p { margin: 0 0 14px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .box {
+    background: var(--box); border: 1px solid var(--box-border); border-radius: 10px;
+    padding: 18px 22px; margin: 24px 0;
+  }
+  .box h2 { font-size: 15px; margin: 0 0 8px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--brand); }
+  footer { border-top: 1px solid var(--rule); margin-top: 36px; padding-top: 16px; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">Just Doors Inc.</p>
+  <h1>Just Doors Dashboard</h1>
+  <p>An internal business-operations and financial dashboard used by Just Doors Inc. (residential door replacement, Atlanta GA). It connects read-only to the company's own QuickBooks Online account to display financial reports alongside job data.</p>
+
+  <div class="box">
+    <h2>Access</h2>
+    <p class="muted">This is a private, single-company application. Sign-in is restricted to Just Doors staff Google Workspace accounts (@justdoors.io) and the app runs on company infrastructure — there is no public sign-up and no third-party data access.</p>
+  </div>
+
+  <div class="box">
+    <h2>Legal</h2>
+    <ul>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="eula.html">End-User License Agreement</a></li>
+    </ul>
+  </div>
+
+  <p class="muted">Questions, problems, or data requests: <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a></p>
+
+  <footer>© 2026 Just Doors Inc. · Just Doors Dashboard is an internal tool of Just Doors Inc. and is not affiliated with Intuit Inc. QuickBooks is a trademark of Intuit Inc.</footer>
+</main>
+</body>
+</html>

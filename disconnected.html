@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuickBooks Disconnected — Just Doors Dashboard</title>
+<style>
+  :root {
+    --paper: #FAFAF8; --ink: #24313B; --muted: #5C7182;
+    --brand: #1F4C66; --rule: #DEE5E8; --box: #F1F4F5; --box-border: #D8E0E4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #1a1e21; --ink: #D5D5D7; --muted: #8fb3c9; --brand: #8fb3c9; --rule: #2a3338; --box: #21272b; --box-border: #2e373d; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    margin: 0; padding: 48px 24px; line-height: 1.6;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  .brand { color: var(--brand); font-size: 13px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; margin: 0 0 8px; }
+  h1 { font-size: 28px; margin: 0 0 12px; line-height: 1.2; }
+  p { margin: 0 0 14px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .box { background: var(--box); border: 1px solid var(--box-border); border-radius: 10px; padding: 18px 22px; margin: 24px 0; }
+  a { color: var(--brand); }
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">Just Doors Inc.</p>
+  <h1>QuickBooks has been disconnected</h1>
+  <p>The connection between QuickBooks Online and the Just Doors Dashboard has been removed.</p>
+  <div class="box">
+    <p style="margin:0">The dashboard no longer accesses your QuickBooks data. Stored access and refresh tokens are revoked with Intuit and deleted from the dashboard server. The app keeps no database of QuickBooks records — cached report data expires from memory within the hour.</p>
+  </div>
+  <p>To reconnect, a dashboard administrator signs in and uses the <b>Reconnect QuickBooks</b> link on any page banner.</p>
+  <p class="muted">Questions: <a href="mailto:jmaxim@justdoors.io">jmaxim@justdoors.io</a> · <a href="privacy-policy.html">Privacy Policy</a> · <a href="index.html">Home</a></p>
+</main>
+</body>
+</html>
