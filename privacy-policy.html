@@ -204,7 +204,7 @@
     <h2>At a Glance</h2>
     <dl>
       <dt>What we access</dt>
-      <dd>Read-only QuickBooks Online accounting data for one company — invoices, expenses, customers, and similar records. The app never writes, edits, or deletes anything in QuickBooks.</dd>
+      <dd>QuickBooks Online accounting data for one company — invoices, expenses, customers, and similar records. Reading is the app's primary function; its only write operation is creating customer/project records (sub-customers) in the company's own QuickBooks file to mirror the company's job records, so costs can be tracked per job. The app never creates, edits, or deletes financial transactions — no invoices, bills, payments, or journal entries.</dd>
       <dt>How it's stored</dt>
       <dd>In temporary server memory only, refreshed on a rolling basis and erased whenever the server restarts. No database of QuickBooks data is kept.</dd>
       <dt>Who can see it</dt>
@@ -241,7 +241,7 @@
   <section id="what-the-app-does">
     <h2 class="sec"><span class="num">2.</span>What the App Does</h2>
     <p>The App connects to a single QuickBooks Online company file — our own — through Intuit's OAuth 2.0 authorization flow, using the <strong>com.intuit.quickbooks.accounting</strong> scope. The connection is authorized by an administrator of that QuickBooks company.</p>
-    <p>The App performs <strong>read-only</strong> operations. It queries accounting data through the QuickBooks Online API and displays it in dashboard views. It does not create, modify, or delete any records in QuickBooks Online, and it does not initiate payments or transactions of any kind.</p>
+    <p>The App primarily performs <strong>read</strong> operations: it queries accounting data through the QuickBooks Online API and displays it in dashboard views. Its single write capability is creating customer/project records (sub-customers) in the company's own QuickBooks file to mirror job records from the company's field-service system. It does not create, modify, or delete financial transactions of any kind, and it does not initiate payments.</p>
   </section>
 
   <section id="data-we-access">

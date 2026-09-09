@@ -184,7 +184,7 @@
   <hr class="brand">
 
   <div class="preamble">
-    <p>This End-User License Agreement (this "Agreement") governs use of the Just Doors Dashboard (the "App"), an internal business-reporting application owned and operated by Just Doors ("we," "us," "our"). The App connects to our company's QuickBooks Online account on a read-only basis and presents that data in dashboard form.</p>
+    <p>This End-User License Agreement (this "Agreement") governs use of the Just Doors Dashboard (the "App"), an internal business-reporting application owned and operated by Just Doors ("we," "us," "our"). The App connects to our company's QuickBooks Online account, presents that data in dashboard form, and creates customer/project records that mirror our own job records; it never modifies financial transactions.</p>
     <p>By accessing or using the App, you agree to this Agreement. If you do not agree, do not use the App.</p>
   </div>
 
@@ -228,7 +228,7 @@
       <li>use the App only for Just Doors' internal business purposes;</li>
       <li>keep login credentials confidential and never share access with any unauthorized person;</li>
       <li>treat data displayed in the App as confidential company financial information and not disclose it outside the company except as authorized in the ordinary course of business;</li>
-      <li>not attempt to circumvent the App's read-only design, access controls, or authentication;</li>
+      <li>not attempt to circumvent the App's data-handling design, access controls, or authentication;</li>
       <li>not copy, resell, sublicense, or redistribute the App or systematically extract its data for use outside Just Doors;</li>
       <li>not use the App in any way that violates applicable law or Intuit's terms of service.</li>
     </ul>
@@ -236,7 +236,7 @@
 
   <section id="quickbooks">
     <h2 class="sec"><span class="num">5.</span>QuickBooks Online Connection</h2>
-    <p>The App connects to a single QuickBooks Online company via Intuit's OAuth 2.0 authorization flow, using the <strong>com.intuit.quickbooks.accounting</strong> scope, and performs <strong>read-only</strong> operations. It does not create, modify, or delete records in QuickBooks Online.</p>
+    <p>The App connects to a single QuickBooks Online company via Intuit's OAuth 2.0 authorization flow, using the <strong>com.intuit.quickbooks.accounting</strong> scope, and primarily performs <strong>read</strong> operations. Its only write capability is creating customer/project records (sub-customers) mirroring the company's own jobs; it does not create, modify, or delete financial transactions.</p>
     <p>QuickBooks and QuickBooks Online are trademarks of Intuit Inc. The App is an independent internal tool built on Intuit's public API; it is not endorsed by, affiliated with, or certified by Intuit. Use of QuickBooks Online itself remains governed by the user's agreements with Intuit, and the App's access to QuickBooks data may be revoked at any time through the connected Intuit account.</p>
   </section>
 
